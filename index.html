@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <!-- left section with pic and logo stars here -->
+    <div id="left">
+        <div id="odin_logo_bg">
+            <div id="odin_logo"></div>
+            <div id="odin_logo_text">ODIN</div>    
+        </div>
+    <div id="photo_credit">
+        <p>Photo by 
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a> 
+            on 
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">UpSplash</a>
+        </p>
+    </div>
+    </div> <!-- left section with pic and logo ends here -->
+
+
+    <!-- right section with form and text stars here -->
+    <div id="right">
+        <div id="intro">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.</p>
+            <p>You <i>know</i> you want to</p>
+        </div> <!-- intro ends here -->
+
+        <div id="form_div">
+           
+            <form name="sign_up" action="#" method="post">
+                <div id="fields">
+                    <h1>Let's do this!</h1>
+                    <div class="form_row">
+                        <fieldset>
+                            <label for="firstname">FIRST NAME</label>
+                            <input id="firstname" type="text" value="" name="firstname" pattern="[a-zA-Z0-9]{2,}" minlength="2" required placeholder="Minimum 2 letters">
+                        </fieldset>
+                        <fieldset>
+                            <label for="lastname">LAST NAME</label>
+                            <input id="lastname" type="text" value="" name="lastname" pattern="[a-zA-Z0-9]{2,}" minlength="2"   required placeholder="Minimum 2 letters">
+                        </fieldset>
+                    </div><!-- name row -->
+
+                    <div class="form_row">
+                        <fieldset>
+                            <label for="email">EMAIL</label>
+                            <input id="email" type="email" value="" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="email@example.com">
+         
+                        </fieldset>
+                        <fieldset>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input id="phone" type="number" value="" name="phone" pattern="^\(\d{3}\)\s*\d{3}-\d{4}$" required placeholder="(123) 456-7890">
+                        </fieldset>
+                    </div> <!-- contact row -->
+
+                    <div class="form_row">
+                        <fieldset>
+                            <label for="pw">PASSWORD</label>
+                            <input type="password" id="pw" name="password" placeholder="4 to 8 characters" required pattern=".{4,8}" onkeyup='check();'>
+                        </fieldset>
+                        <fieldset>
+                            <label for="cpw">CONFIRM PASSWORD</label>
+                            <input type="password" id="cpw" name="confirm_password" placeholder="Confirm password" required pattern=".{4,8}"onkeyup='check();'>
+                        </fieldset>
+                        
+                    </div> <!-- password row -->
+
+                    <span id='message'></span>
+        
+
+                </div> <!-- fields end here -->
+
+
+
+                <div id="submit_btn">
+                    <div id="submit_form">
+                        <input type="submit" value="CREATE ACCOUNT">
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </div>
+
+            </form> <!-- form ends here -->
+        </div> <!-- form_div ends here -->
+
+
+    </div> <!-- right section with form and text ends here -->
+    <script defer src="main.js"></script>
+</body>
+</html>
