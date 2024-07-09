@@ -275,3 +275,19 @@ input[type="submit"]{
 }
 
 }
+
+/* Styles for pointer devices with fine accuracy (e.g., a mouse) */
+@media (pointer: fine) {
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Styles for pointer devices with coarse accuracy (e.g., a touch-based device) */
+@media (pointer: coarse) {
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+  }
+}
